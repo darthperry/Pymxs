@@ -1,16 +1,14 @@
-import pymxs
-rt = pymxs.runtime #so
-
-li = []
-lis = []
+from pymxs import runtime as rt
+Temp = []
+ListResult = []
 x = 0
 for i in rt.selection:
-	li.append(str(i.name))
+   Temp.append(str(i.name))
 
-li.sort()
-	
+Temp.sort()
+   
 for i in rt.selection:
-	lis.append(rt.getnodebyname(li[x]))
-	x += 1
-	
-del li
+   ListResult.append(rt.getnodebyname(Temp[x]))
+   x += 1 #Python has no ++
+   
+del Temp
