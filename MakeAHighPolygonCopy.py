@@ -1,3 +1,4 @@
+from pymxs import runtime as rt
 origal = rt.selection[0]
 rt.execute("maxOps.cloneNodes $ cloneType:#copy newNodes:&nnl select nnl")
 # have to use Maxscript
