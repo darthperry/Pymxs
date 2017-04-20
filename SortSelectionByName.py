@@ -1,5 +1,5 @@
 import pymxs
-rt = pymxs.runtime
+rt = pymxs.runtime #so
 
 li = []
 lis = []
