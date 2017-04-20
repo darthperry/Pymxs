@@ -1,3 +1,5 @@
+from pymxs import runtime as rt
+#Must have object selection
 for i in rt.selection:
 	if i.modifiers["turbosmooth"] == None:
 		print i.name+" add Turbosmooth"
