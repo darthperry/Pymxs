@@ -7,3 +7,5 @@ for i in rt.selection:
 	else: #i.modifiers["turbosmooth"] != None
 		print "ccc"
 		i.turbosmooth.iterations = 2
+
+# It is a exsample for test how pymxs find a keyword
