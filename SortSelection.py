@@ -35,11 +35,26 @@ def SortByVolume():
 	for i in rt.selection:
 		ListResult.append(rt.getnodebyname(Temp[x][1]))
 		x += 1 #Python has no ++
-	print ListResult   
+	#print ListResult   
 	return ListResult	
 	
 def SortByPolycount():
-	Pass
+	ListResult = []
+	Temp = []
+	x = 0
+		
+	for i in rt.selection:
+		PolyCount = rt.getPolygonCount(i)
+		result = [PolyCount[0],str(i.name)]		
+		Temp.append(result)
+
+	Temp.sort()
+		   
+	for i in rt.selection:
+		ListResult.append(rt.getnodebyname(Temp[x][1]))
+		x += 1 #Python has no ++
+	#print ListResult   
+	return ListResult	
 	
 def main():
 	Pass 
